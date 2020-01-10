@@ -1,4 +1,4 @@
-# NER-pytorch
+# NER-PyTorch
 
 因最近在做安全领域的NER，所以正好记录一下自己用的BILSTM-CRF、ELMo、BERT等模型来做NER模型的代码
 
