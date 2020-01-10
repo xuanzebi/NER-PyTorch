@@ -252,11 +252,11 @@ if __name__ == "__main__":
 
     parser.add_argument('--model_save_dir', type=str, default='./saved_models', help='Root dir for saving models.')
     parser.add_argument('--data_path', default='', type=str, help='数据路径')
-    parser.add_argument('--pred_embed_path', default='', type=str, help='预训练词向量路径')
+    parser.add_argument('--pred_embed_path', default='', type=str, help='预训练词向量路径(glove、word2vec),空则随机初始化词向量')
     parser.add_argument('--tensorboard_dir', default='./saved_models/runs/', type=str)
 
     parser.add_argument("--use_bieos", default=False, type=str2bool, help="True:BIEOS False:BIO")
-    parser.add_argument('--data_type', default='cyber', help='数据类型 -conll - cyber')
+    parser.add_argument('--data_type', default='con;;', help='数据类型 -conll - cyber')
     parser.add_argument('--optimizer', default='Adam', type=str)
 
     parser.add_argument('--max_seq_length', default=128, type=int, help='Sequence max_length.')
