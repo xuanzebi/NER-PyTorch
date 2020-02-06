@@ -126,6 +126,10 @@ def evaluate(data, model, label_map, tag,use_crf):
                 if input_mask[i][j] != 0:
                     temp_1.append(label_map[m])
                     temp_2.append(label_map[logits[i][j]])
+                    if j == label.size -1:
+                        assert (len(temp_1) == len(temp_2))
+                        y_true.append(temp_1)
+                        y_pred.append(temp_2)
                 else:
                     assert (len(temp_1) == len(temp_2))
                     y_true.append(temp_1)

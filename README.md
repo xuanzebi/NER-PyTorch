@@ -1,6 +1,6 @@
 # NER-PyTorch
 
-因最近在做安全领域的NER，所以正好记录一下自己用的BILSTM-CRF、ELMo、BERT等模型来做NER模型的代码
+因最近在做安全领域的NER，所以正好记录一下自己用的BILSTM-CRF、ELMo、BERT等模型来做NER模型的代码。
 
 ## Bi-LSTM-CharCNN-CRF
 
@@ -33,4 +33,6 @@ sh.conll_run.sh 直接运行代码
 
 ## Other Model......
 
-待更新
+待更新···后续会更新一些使用对抗攻击、蒸馏、双指针训练NER、BERT等模型。
+
+最近做实验的代码懒得整理更新了，所以不能保证代码能直接运行,只是大体代码框架。稍微修改修改就可以。
